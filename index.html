@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile app</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col justify-center items-center bg-[#F4F5F7] h-screen">
+
+    <div class="w-xs h-36 bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+        <img src="./assets/Group.png" alt="">
+    </div>
+
+    <form class="w-xs p-8 bg-white rounded-2xl">
+        <label class="font-semibold">Mobile Number</label>
+        <br>
+        <input type="text" placeholder="Enter your number" class="input rounded-3xl px-4 my-2" id="number"/>
+        <br>
+        <label class="font-semibold">4 Digit Pin</label>
+        <br>
+        <input type="text" placeholder="Enter your pin" class="input rounded-3xl px-4 my-2" id="pin"/>
+        <!-- button must provide the type. othwise it will be submit button and will reload -->
+        <button id="loginButton" class="btn bg-blue-500 w-full mt-5 text-white text-[18px] rounded-3xl">Login</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
